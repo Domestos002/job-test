@@ -1,0 +1,9 @@
+<div class="breadcrumbs {{ classes }}">
+    {% for item in items %}
+        {% if loop.index != items.length %}
+            <a href="{{ item.url }}" class="breadcrumbs__link">{{ item.title }}</a>
+        {% else %}
+            <span class="breadcrumbs__text">{{ item.title }}</span>
+        {% endif %}
+    {% endfor %}
+</div>

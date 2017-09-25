@@ -1,0 +1,68 @@
+{% extends "layouts/app.twig" %}
+
+{% block pageTitle %}Главная страница{% endblock %}
+
+{% block content %}
+
+    <main class="page-main">
+        <div class="page-main__wrapper">
+            <div class="page-main__inner">
+                <div class="container">
+                <div class="bordered-block">
+                    {% include '../blocks/breadcrumb/breadcrumb.twig' with {items: [{title: 'Новостройки', url: '#'}, {title: 'Акции и спецпредложения', url: '#'}]} %}
+                    {% include '../blocks/main-banner/main-banner.twig' with {
+                    title: "ВТБ24 предлагает покупателям «Пресня Сити», «Басманный,5» и «Царская площадь» премиальное банковское обслуживание" ,
+                    text: "Размещение позиционирует институциональный стратегический маркетинг. Такое понимание стуации восходит к Эл Райс, при этом нестандартный поход категр=орически экономит комплексный медиабизнес. Ценовая стратеги индуцирует бренд",
+                    pill: "до 31 января",
+                    term: "5 дней"
+                    } %}
+                    <div class="page-block">
+                        <div class="page-block__title">
+                            <h2>Еще акции</h2>
+                        </div>
+                        <div class="page-block__contain">
+                            <div class="record-list">
+                                {% for 1 in 1..2 %}
+                                    {% include '../blocks/record-item/record.twig' with {text: "Стратегия сегментации, в рамках сегодняшних воззрений, категорически тормозит процесс стратегического планирования",title: "Новогодняя скидка 1 000 000 рублей в ЖК SREDA", pill: "до 31 ЯНВАРЯ"} %}
+                                    {% include '../blocks/record-item/record.twig' with {text: "Банк ВТБ24 и девелоперы MR Group и Coalco приготовили..",title: "Покупка квартиры в Бэсткон - реальный шанс выиграть автомобиль", pill: "до 31 ЯНВАРЯ"} %}
+                                    {% include '../blocks/record-item/record.twig' with {text: "Стратегия сегментации, в рамках сегодняшних воззрений, категорически тормозит процесс стратегического планирования",title: "ВТБ24 предлагает покупателям «Пресня Сити», «Басманный,5» и «Царская площадь» премиальное банковское обслуживание", pill: "до 31 ЯНВАРЯ"} %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="page-block">
+
+                        <div class="page-block__title">
+                            <h2>Другие акции</h2>
+                        </div>
+                        <div class="page-block__contain">
+                            <div class="thumnail-list">
+                                {% for 1 in 1..2 %}
+                                    {% include '../blocks/thumbnail-item/thumbnail-item.twig' with {text: "Новогодняя скидка 1 000 000 рублей в ЖК SREDA", pill: "до 31 ЯНВАРЯ"} %}
+                                    {% include '../blocks/thumbnail-item/thumbnail-item.twig' with {text: "Покупка квартиры в Бэсткон - реальный шанс выиграть автомобиль", pill: "до 31 ЯНВАРЯ"} %}
+                                    {% include '../blocks/thumbnail-item/thumbnail-item.twig' with {text: "ВТБ24 предлагает покупателям «Пресня Сити», «Басманный,5» и «Царская площадь» премиальное банковское обслуживание", pill: "до 31 ЯНВАРЯ"} %}
+                                {% endfor %}
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="page-main__sidebar">
+            <div class="banner-list">
+                {% include '../blocks/banner-item/banner-item.twig' with {title: "Lorem ipsum dolor sit amet, consectetur adipisicing.", text: " Lorem ipsum dolor sit amet, consectetur adipisicing elit."} %}
+                {% include '../blocks/banner-item/banner-item.twig' with {title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, ipsa!", text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, perspiciatis."} %}
+                {% include '../blocks/banner-item/banner-item.twig' with {title: "Lorem ipsum dolor sit.", text: "text1"} %}
+                {% include '../blocks/banner-item/banner-item.twig' with {title: "title4", text: "Lorem ipsum dolor sit amet, consectetur adipisicing."} %}
+            </div>
+        </div>
+
+    </main>
+
+
+{% endblock %}
