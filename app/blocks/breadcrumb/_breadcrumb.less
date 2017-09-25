@@ -1,0 +1,21 @@
+.breadcrumbs{
+  margin-bottom: 25px;
+  display: flex;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  justify-content: flex-start;
+  &__link, &__text{
+    color: #1489d4;
+    text-decoration: none;
+    display: inline-block;
+
+  }
+  &__link:not(:last-child){
+    &::after{
+      content: '>';
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+}

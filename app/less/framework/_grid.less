@@ -1,0 +1,142 @@
+.container(){
+  margin: 0 auto;
+  max-width: @content-width;
+  padding: @content-indent;
+}
+
+
+.container-fluid () {
+  padding: @content-indent;
+  width: 100%;
+}
+
+
+
+.grid() {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+//
+//@each $value in '1-2_50', '1-3_33.333', '1-4_25', '1-5_20', '1-6_16.666', '1-7_14.2857', '1-8_12.5', '1-9_12.5'
+//	$values: str_split('#{$value}', '_')
+//	$width: nth($values, 2)
+//	$widthName: nth($values, 1)
+//
+//	.width-#{$widthName}
+//		width: unquote("#{$width}%")
+//
+//	.sm-width-#{$widthName}
+//		+respond-to(sm)
+//			width: unquote("#{$width}%")
+//
+//	.md-width-#{$widthName}
+//		+respond-to(md)
+//			width: unquote("#{$width}%")
+//
+//	.lg-width-#{$widthName}
+//		+respond-to(lg)
+//			width: unquote("#{$width}%")
+//
+//	.xlg-width-#{$widthName}
+//		+respond-to(xlg)
+//			width: unquote("#{$width}%")
+//
+//	.exlg-width-#{$widthName}
+//		+respond-to(exlg)
+//			width: unquote("#{$width}%")
+//
+//
+//@each $value in '1_8.333', '2_16.666', '3_25', '4_33.333', '5_41.666', '6_50', '7_58.333', '8_66.666', '9_75', '10_83.333', '11_91.666' , '12_100'
+//	$values: str_split('#{$value}', '_')
+//	$width: nth($values, 2)
+//	$widthName: nth($values, 1)
+//
+//	.push-right-#{$widthName}
+//		margin-right: unquote("#{$width}%")
+//
+//	.push-left-#{$widthName}
+//		margin-left: unquote("#{$width}%")
+//
+//	.width-#{$widthName}
+//		width: unquote("#{$width}%")
+//
+//	.sm-width-#{$widthName}
+//		+respond-to(sm)
+//			width: unquote("#{$width}%")
+//
+//	.md-width-#{$widthName}
+//		+respond-to(md)
+//			width: unquote("#{$width}%")
+//
+//	.lg-width-#{$widthName}
+//		+respond-to(lg)
+//			width: unquote("#{$width}%")
+//
+//	.xlg-width-#{$widthName}
+//		+respond-to(xlg)
+//			width: unquote("#{$width}%")
+//
+//	.exlg-width-#{$widthName}
+//		+respond-to(exlg)
+//			width: unquote("#{$width}%") //wddwds
+//
+//@each $value in 0, 15, 20, 30, 35, 40, 50, 60, 65, 70, 100, 115
+//	.grid-#{$value}
+//		margin-left: -#{$value}px
+//		margin-top: -#{$value}px
+//
+//		& > *
+//			box-sizing: border-box
+//			padding-left: #{$value}px
+//			padding-top: #{$value}px
+//			flex-wrap: wrap
+//
+//
+//	.sm-grid-#{$value}
+//		+respond-to(sm)
+//			margin-left: -#{$value}px
+//			margin-top: -#{$value}px
+//
+//			& > *
+//				box-sizing: border-box
+//				padding-left: #{$value}px
+//				padding-top: #{$value}px
+//
+//	.md-grid-#{$value}
+//		+respond-to(md)
+//			margin-left: -#{$value}px
+//			margin-top: -#{$value}px
+//
+//			& > *
+//				box-sizing: border-box
+//				padding-left: #{$value}px
+//				padding-top: #{$value}px
+//
+//	.lg-grid-#{$value}
+//		+respond-to(lg)
+//			margin-left: -#{$value}px
+//			margin-top: -#{$value}px
+//
+//			& > *
+//				box-sizing: border-box
+//				padding-left: #{$value}px
+//				padding-top: #{$value}px
+//
+//	.xlg-grid-#{$value}
+//		+respond-to(xlg)
+//			margin-left: -#{$value}px
+//			margin-top: -#{$value}px
+//
+//			& > *
+//				box-sizing: border-box
+//				padding-left: #{$value}px
+//				padding-top: #{$value}px
+//
+//
+//
+//
+//
+//
+//
+//

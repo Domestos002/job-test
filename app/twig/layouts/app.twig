@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block pageTitle %}{% endblock %}</title>
+
+    <!-- Stylesheets -->
+    {% include "stylesheets.twig" %}
+</head>
+<body>
+<nav id="slide-menu" class="slideout-menu">
+    <i class="slide-menu__close"></i>
+    <div id="offcanvas">
+        <div class="uk-position-relative">
+            <div class="slide-menu__bar" mode="push">
+
+                {#<div class="page-header__search">#}
+                {#<div class="input-wrapper">#}
+                {#<input type="text" placeholder="Поиск по сайту">#}
+                {#</div>#}
+                {#</div>#}
+                <ul class="slide-menu__nav uk-nav-parent-icon mb-20" data-uk-nav="">
+                    <li class=""><a href="">ГЛАВНАЯ</a></li>
+                    <li class=""><a href="">УСЛУГИ & ЦЕНЫ</a></li>
+                    <li class=""><a href="">КОМПЛЕКСНЫЕ РЕШЕНИЯ</a></li>
+                    <li class=""><a href="">ПОРТФОЛИО</a></li>
+                    <li class=""><a href="">ОТЗЫВЫ</a></li>
+                    <li class=""><a href="">КОНТАКТЫ</a></li>
+                </ul>
+                <div class="text-center">
+                    <a href="tel:84732783896"
+                       class="offcanvas-phone uk-display-inline-block fz25 text-brand text-semibold">8
+                        (473) 278-38-96</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="mobile-filter">
+        {#<i class="uk-offcanvas-bar__close slide-menu__close"></i>#}
+    </div>
+</nav>
+<div class="site-wrapper" id="site-wrapper">
+    <div class="" id="site-wrapper-overlay"></div>
+    <!-- Header block -->
+    {% include "../../blocks/header/header.twig" %}
+    <!-- Header block end -->
+
+    <!-- Block content -->
+    {% block content %}
+
+    {% endblock %}
+    <!-- Block content end -->
+
+    <!-- Footer block -->
+    {% include "../../blocks/footer/footer.twig" %}
+    <!-- Footer block end -->
+
+    <!-- Scripts -->
+    {% include "scripts.twig" %}
+</div>
+
+</body>
+</html>
